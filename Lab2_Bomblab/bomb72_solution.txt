@@ -1,0 +1,7 @@
+All your base are belong to us.		// rsi 프린트
+0 1 1 2 3 5					// loop문에서 값 변화
+3 w 909					// cmp에서 비교값 프린트(119, 0x38d)
+108 2 DrEvil					// 108은 재귀함수의 출력값, 2는 입력값 input<=4
+5 115						// https://blog.naver.com/mjyoo222/221395260628
+3 6 5 1 2 4					// stack
+47						// tree(secret phase)

@@ -1,2 +1,9 @@
-# system-programming-lab
-Deep dive into system-level programming: Bit manipulation, x86-64 assembly analysis, and memory hierarchy optimization through CS:APP labs.
+# System Programming Lab (PNU)
+
+This repository contains my assignment files, problem materials, and solutions for the **System Programming** course at **Pusan National University (PNU)**.
+
+- Semester: **2024 Spring (1st semester)**
+- Course: **System Programming**
+- Labs: **Data Lab, Bomb Lab, Attack Lab, Cache Lab**
+
+It is mainly an archive of completed coursework rather than a detailed project report.

