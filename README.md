@@ -6,4 +6,4 @@ This repository contains my assignment files, problem materials, and solutions f
 - Course: **System Programming**
 - Labs: **Data Lab, Bomb Lab, Attack Lab, Cache Lab**
 
-It is mainly an archive of completed coursework rather than a detailed project report.
+It is an archive of completed coursework.
