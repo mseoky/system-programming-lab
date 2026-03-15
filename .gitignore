@@ -1,0 +1,9 @@
+Lab1_Datalab/src/*.o
+Lab1_Datalab/src/btest
+Lab1_Datalab/src/fshow
+Lab1_Datalab/src/ishow
+Lab1_Datalab/src/tests
+Lab1_Datalab/src/*.exe
+Lab4_Cachelab/src/*.o
+Lab4_Cachelab/src/csim
+Lab4_Cachelab/src/*.exe
